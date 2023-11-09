@@ -30,7 +30,7 @@ public class UsrArticleController {
 	@RequestMapping("/usr/article/showList")
 	@ResponseBody
 	public List<Article> showList() {
-		return articleService.articles;
+		return articleService.getArticles();
 	}
 	
 	@RequestMapping("/usr/article/showDetail")
